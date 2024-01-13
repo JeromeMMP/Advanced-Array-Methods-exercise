@@ -302,9 +302,12 @@ function doubleOddNumbers(arr) {
     if(v%2 === 1){
         return v;
         }
-    })
-   const multBy2 = filteredArr4.map(function(v){
-    return v*2;
-   })
-   return multBy2;
+    }).map(function(v){
+        return v*2;
+       })
+//    const multBy2 = filteredArr4.map(function(v){
+//     return v*2;
+//    })
+   return filteredArr4
+;
 }
