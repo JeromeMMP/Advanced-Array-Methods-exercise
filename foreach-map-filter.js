@@ -279,13 +279,17 @@ function removeVowels(str) {
     let word = str.toLowerCase(); 
     let vowels = 'aeiou'
     let result = ''
+    
+    const noVowels = Array.from(word).filter(function(letter){
+        return !vowels.includes(letter)})
+        return noVowels.join('');
 
-    for(let letter of word){
-        if(!vowels.includes(letter)){
-            result += letter
-        }
-    }
-    return result
+    // for(let letter of word){
+    //     if({
+    //         result += letter
+    //     }
+    // }
+    // return result
    
 }
 
