@@ -14,6 +14,7 @@ function doubleValues(arr){
     // }
     // return newArr;
 
+
     const mapping = arr.map(function(v){
         return v*2
     })
@@ -59,13 +60,13 @@ function showFirstAndLast(arr){
     let lastLetter = '';
     let lV;
     let value;
-    for (word of arr){
+    arr.forEach(function(word){
         lV = word.length - 1; 
         firstLetter = word[0];
         lastLetter =word[lV];
         value = `${firstLetter}${lastLetter}`
         newArr3.push(value);
-    }
+    })
     return newArr3;
 }
 
